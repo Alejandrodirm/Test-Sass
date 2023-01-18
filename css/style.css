@@ -1,0 +1,17 @@
+/* line 5, ../github/Test-Sass/sass/style.sass */
+.contenedor {
+  width: 1024px;
+}
+
+/* line 8, ../github/Test-Sass/sass/style.sass */
+h1, h2, h3, p {
+  color: #AAA;
+}
+
+/* line 10, ../github/Test-Sass/sass/style.sass */
+.contenedor-con-altura {
+  @extends .contenedor;
+  height: 514px;
+}
+
+/*# sourceMappingURL=style.css.map */

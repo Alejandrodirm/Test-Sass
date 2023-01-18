@@ -1,0 +1,71 @@
+$ancho: 1288px;
+$color-letra: #AAA;
+$altura: 514px;
+
+.contenedor{
+    width: $ancho;
+}
+h1,h2,h3,p{
+    color: $color-letra;
+}
+.contenedor-con-altura{
+   // @extends .contenedor;
+    height: 514px;
+}
+ul {
+    font-size: 1.2em;
+    color:red;
+    ul{
+        font-size: 0.5rem;
+        color: green;
+        ul{
+            font-size: 0.5rem;
+            color: grey;
+        }
+    }
+}
+a{
+    color:blue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    &:hover{
+        color:green;
+        text-decoration: underline;
+    };
+    &:focus{
+        color:red;
+        text-decoration: none;
+    }
+    &.enlace-propio{
+        color: red;
+    }
+    
+}
+.mitad{
+    width: ($ancho/2);
+}
+.cuarto{
+    width: ($ancho/4);
+}
+.octavo{
+    width: ($ancho/8);
+}
+@function partir($tam,$numpart){
+    @return($tam/$numpart);
+}
+.decimo{
+    width: partir($ancho,10);
+}
+ @mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+ }
+ .box{
+    @include border-radius(5px);
+ }
+ @for $p from 2 through 12 {
+    .col-#{$p}{
+        width: 100/$p+"%";
+    }
+ }

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"$ancho: 1024px;\n$color-letra: #AAA;\n$altura: 514px;\n\n.contenedor {\n    width: $ancho; }\n\nh1,h2,h3,p {\n    color: $color-letra; }\n.contenedor-con-altura {\n    @extends .contenedor;\n    height: 514px; }\n\n"
+	],
+	"names": [],
+	"mappings": ";AAIA,AAAA,WAAW,CAAC;EACR,KAAK,EALD,MAAM;CAKM;;;AAEpB,AAAA,EAAE,EAAC,EAAE,EAAC,EAAE,EAAC,CAAC,CAAC;EACP,KAAK,EAPK,IAAI;CAOQ;;;AAC1B,AAAA,sBAAsB,CAAC;EACnB,QAAQ,CAAR,WAAQ;EACR,MAAM,EAAE,KAAK;CAAG"
+}
